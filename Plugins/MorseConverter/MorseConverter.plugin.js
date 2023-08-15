@@ -1,7 +1,7 @@
 /**
  * @name Morse
  * @description Converts inputted text into Morse code by using slash-commands.
- * @version 1.0.3
+ * @version 1.0.4
  * @author Daaku
  */
 
@@ -16,31 +16,35 @@ module.exports = (() => {
           github_username: "D4aku",
         },
       ],
-      version: "1.0.3",
+      version: "1.0.4",
       description: "Converts inputted text into Morse code by using slash-commands.",
       github: "https://github.com/D4aku/BetterDiscordPlugins/tree/main/Plugins/MorseConverter",
       github_raw:
         "https://raw.githubusercontent.com/D4aku/BetterDiscordPlugins/main/Plugins/MorseConverter/MorseConverter.plugin.js",
     },
-    changelog: [
-      {
-        title: "Disclaimer!",
-        items: [
-	  "This Plugin uses Code from Ahlawat's Nekos Plugin, thank you a lot!",
-	  "This Plugin will instantly be removed if Ahlawat says so!",
-        ],
-        title: "Update v1.0.3",
-        items: [
-          "Added more symbols from the International Morse Code.",
-        ],
-        title: "Initial Release v1.0.0",
-        items: [
-          "This is the initial release of the deMorse plugin.",
-          "Converts inputted text into Morse code by using slash-commands.",
-          "Supports 36 letters of the International Morse Code.",
-        ],
-      },
-    ],
+		changelog: [
+			{
+				title: "Disclaimer!",
+				items: [
+					"This Plugin uses Code from Ahlawat's Nekos Plugin, thank you a lot!",
+					"This Plugin will instantly be removed if Ahlawat says so!",
+				],
+			},
+			{
+				title: "Update v1.0.3",
+				items: [
+					"Added more symbols from the International Morse Code.",
+				],
+			},
+			{
+				title: "Initial Release v1.0.0",
+				items: [
+					"This is the initial release of the deMorse plugin.",
+					"Converts inputted text into Morse code by using slash-commands.",
+					"Supports 36 letters of the International Morse Code.",
+				],
+			},
+		],
     main: "MorseConverter.plugin.js",
   };
 
