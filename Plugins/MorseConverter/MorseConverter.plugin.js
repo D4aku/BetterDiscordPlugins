@@ -1,7 +1,7 @@
 /**
  * @name Morse
  * @description Converts inputted text into Morse code by using slash-commands.
- * @version 1.0.1
+ * @version 1.0.2
  * @author Daaku
  */
 
@@ -16,7 +16,7 @@ module.exports = (() => {
           github_username: "D4aku",
         },
       ],
-      version: "1.0.1",
+      version: "1.0.2",
       description: "Converts inputted text into Morse code by using slash-commands.",
       github: "https://github.com/D4aku/BetterDiscordPlugins/tree/main/Plugins/MorseConverter",
       github_raw:
