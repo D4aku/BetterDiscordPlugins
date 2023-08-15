@@ -35,7 +35,7 @@ Welcome to my Better Discord Plugins Repository! This repository contains a coll
 
 - Once installed, the plugins will add new features or improvements to your Discord interface.
 - If you encounter any issues or have questions about a specific plugin, please add me on discord: @daakup
-- For general inquiries or discussions about Better Discord plugins, feel free to join the [Better Discord Discord Server]([https://discord.gg/betterplugins](https://discord.com/invite/0Tmfo5ZbORCRqbAd)) where you can connect with other users and plugin developers.
+- For general inquiries or discussions about Better Discord plugins, feel free to join the [Better Discord Discord Server](https://discord.com/invite/0Tmfo5ZbORCRqbAd) where you can connect with other users and plugin developers.
 
 Thank you for choosing my Better Discord Plugins and enhancing your Discord experience with those! Enjoy!
 
