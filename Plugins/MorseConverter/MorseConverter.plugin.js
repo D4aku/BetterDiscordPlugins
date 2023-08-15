@@ -155,6 +155,7 @@ module.exports = (() => {
                   displayDescription: "Whether you want to send this or not.",
                   displayName: "Send",
                   name: "Send",
+		  required: true,
                   type: 5,
 		},
               ],
