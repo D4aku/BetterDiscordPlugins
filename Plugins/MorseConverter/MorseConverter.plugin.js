@@ -111,24 +111,24 @@ module.exports = (() => {
     }
 
     if (sendOption.value == false) {
-      	MessageActions.receiveMessage(
-        channel.id,
-        LibraryUtils.FakeMessage(
-          channel.id,
-          morseCode
-        )
-        undefined,
-        {}
-      );
+    	MessageActions.receiveMessage(
+            channel.id,
+            LibraryUtils.FakeMessage(
+            	channel.id,
+            	morseCode
+            ),
+            undefined,
+            {}
+        );
     } else {
-      MessageActions.sendMessage(
-        channel.id,
-        {
-          content: morseCode,
-          tts: false,
-          validNonShortcutEmojis: [],
-        },
-      );
+        MessageActions.sendMessage(
+            channel.id,
+            {
+                content: morseCode,
+            	tts: false,
+            	validNonShortcutEmojis: [],
+            }
+        );
     }
   } catch (err) {
     Logger.err(err);
