@@ -146,7 +146,7 @@ module.exports = (() => {
                   displayDescription: "Text to convert.",
                   displayName: "Text",
                   name: "Text",
-		              required: true,
+		  required: true,
                   type: 3,
                 },
 		{
