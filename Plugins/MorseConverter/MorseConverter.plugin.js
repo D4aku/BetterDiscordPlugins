@@ -12,7 +12,7 @@ module.exports = (() => {
       authors: [
         {
           name: "Daaku",
-          discord_id: "YourDiscordID",
+          discord_id: "607195119875260438",
           github_username: "D4aku",
         },
       ],
