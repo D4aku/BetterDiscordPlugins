@@ -20,7 +20,7 @@ module.exports = (() => {
       description: "Converts inputted text into Morse code by using slash-commands.",
       github: "https://github.com/D4aku/BetterDiscordPlugins/tree/main/Plugins/MorseConverter",
       github_raw:
-        "https://github.com/D4aku/BetterDiscordPlugins/blob/main/Plugins/MorseConverter/MorseConverter.plugin.js",
+        "https://raw.githubusercontent.com/D4aku/BetterDiscordPlugins/main/Plugins/MorseConverter/MorseConverter.plugin.js",
     },
     changelog: [
       {
