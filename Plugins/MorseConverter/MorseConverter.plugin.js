@@ -95,53 +95,51 @@ module.exports = (() => {
               description: "Convert text to Morse code.",
               type: 1,
               target: 1,
-              execute: async ([send, sendOption], { channel }) => {
-  try {
-    const text = send.value;
-    const morseCode = this.convertToMorse(text);
-    
-    if (!morseCode) {
-      return MessageActions.receiveMessage(
-        channel.id,
-        LibraryUtils.FakeMessage(
-          channel.id,
-          "Failed to convert text to Morse code."
-        )
-      );
-    }
-
-    if (sendOption.value === false) {
-  	MessageActions.receiveMessage(
-    	    channel.id,
-    	    LibraryUtils.FakeMessage(
-                channel.id,
-      		morseCode
-    	    )
-  	);
-    } else {
-  	MessageActions.sendMessage(
-    	    channel.id,
-    	    {
-      	    	content: morseCode,
-	    	tts: false,
-      	    	validNonShortcutEmojis: [],
-    	    },
-            undefined,
-    	    {}
-  	);
-    }
-	  
-  } catch (err) {
-    Logger.err(err);
-    MessageActions.receiveMessage(
-      channel.id,
-      LibraryUtils.FakeMessage(
-        channel.id,
-        "Failed to convert text to Morse code."
-      )
-    );
-  }
-},
+		execute: async ([send, sendOption], { channel }) => {
+  		try {
+			const text = send.value;
+			const morseCode = this.convertToMorse(text);
+			if (!morseCode) {
+				return MessageActions.receiveMessage(
+					channel.id,
+					LibraryUtils.FakeMessage(
+						channel.id,
+						"Failed to convert text to Morse code."
+					)
+				);
+			}
+			const shouldSend = sendOption.value === undefined || sendOption.value === true;
+			if (shouldSend) {
+				MessageActions.sendMessage(
+					channel.id,
+					{
+						content: morseCode,
+						tts: false,
+						validNonShortcutEmojis: [],
+					}
+				);
+			} else {
+				MessageActions.receiveMessage(
+					channel.id,
+					LibraryUtils.FakeMessage(
+						channel.id,
+						morseCode
+					),
+					undefined,
+					{}
+				);
+			}
+		} catch (err) {
+			Logger.err(err);
+			MessageActions.receiveMessage(
+				channel.id,
+				LibraryUtils.FakeMessage(
+					channel.id,
+					"Failed to convert text to Morse code."
+				)
+			);
+		}
+	      },
               options: [
                 {
                   description: "Text to convert.",
