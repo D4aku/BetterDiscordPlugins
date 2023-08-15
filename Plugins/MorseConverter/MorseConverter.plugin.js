@@ -1,4 +1,4 @@
-/**
+"/**
  * @name Morse
  * @description Converts inputted text into Morse code by using slash-commands.
  * @version 1.0.0
@@ -95,51 +95,52 @@ module.exports = (() => {
               description: "Convert text to Morse code.",
               type: 1,
               target: 1,
-		execute: async ([send, sendOption], { channel }) => {
-  		try {
-			const text = send.value;
-			const morseCode = this.convertToMorse(text);
-			if (!morseCode) {
-				return MessageActions.receiveMessage(
-					channel.id,
-					LibraryUtils.FakeMessage(
-						channel.id,
-						"Failed to convert text to Morse code."
-					)
-				);
-			}
-			const shouldSend = sendOption.value === undefined || sendOption.value === true;
-			if (shouldSend) {
-				MessageActions.sendMessage(
-					channel.id,
-					{
-						content: morseCode,
-						tts: false,
-						validNonShortcutEmojis: [],
-					}
-				);
-			} else {
-				MessageActions.receiveMessage(
-					channel.id,
-					LibraryUtils.FakeMessage(
-						channel.id,
-						morseCode
-					),
-					undefined,
-					{}
-				);
-			}
-		} catch (err) {
-			Logger.err(err);
-			MessageActions.receiveMessage(
-				channel.id,
-				LibraryUtils.FakeMessage(
-					channel.id,
-					"Failed to convert text to Morse code."
-				)
-			);
-		}
-	      },
+              execute: async ([send, sendOption], { channel }) => {
+  try {
+    const text = send.value;
+    const morseCode = this.convertToMorse(text);
+    
+    if (!morseCode) {
+      return MessageActions.receiveMessage(
+        channel.id,
+        LibraryUtils.FakeMessage(
+          channel.id,
+          "Failed to convert text to Morse code."
+        )
+      );
+    }
+
+    if (sendOption.value == false) {
+    	MessageActions.receiveMessage(
+            channel.id,
+            LibraryUtils.FakeMessage(
+            	channel.id,
+            	morseCode
+            ),
+            undefined,
+            {}
+        );
+    } else {
+        MessageActions.sendMessage(
+            channel.id,
+            {
+                content: morseCode,
+            	tts: false,
+            	validNonShortcutEmojis: [],
+            }
+        );
+    }
+  } catch (err) {
+    Logger.err(err);
+    MessageActions.receiveMessage(
+      channel.id,
+      LibraryUtils.FakeMessage(
+        channel.id,
+        "Failed to convert text to Morse code."
+      )
+    );
+  }
+},
               options: [
                 {
                   description: "Text to convert.",
@@ -177,4 +178,4 @@ module.exports = (() => {
         };
       })(ZLibrary.buildPlugin(config));
 })();
-/*@end@*/
+/*@end@*/"
