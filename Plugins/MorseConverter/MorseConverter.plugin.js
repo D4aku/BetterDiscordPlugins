@@ -29,7 +29,7 @@ module.exports = (() => {
 	  "This Plugin uses Code from Ahlawat's Nekos Plugin, thank you a lot!",
 	  "This Plugin will instantly be removed if Ahlawat says so!",
         ],
-        title: "Release v1.0.3",
+        title: "Update v1.0.3",
         items: [
           "Added more symbols from the International Morse Code.",
         ],
