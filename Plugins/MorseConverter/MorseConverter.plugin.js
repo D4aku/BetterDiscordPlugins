@@ -13,14 +13,14 @@ module.exports = (() => {
         {
           name: "Daaku",
           discord_id: "YourDiscordID",
-          github_username: "YourGitHubUsername",
+          github_username: "D4aku",
         },
       ],
       version: "1.0.0",
       description: "Converts inputted text into Morse code by using slash-commands.",
-      github: "https://github.com/YourGitHubUsername/BetterDiscordPlugins",
+      github: "https://github.com/D4aku/BetterDiscordPlugins/tree/main/Plugins/MorseConverter",
       github_raw:
-        "https://your-github-username.github.io/BetterDiscordPlugins/Morse.plugin.js",
+        "https://github.com/D4aku/BetterDiscordPlugins/blob/main/Plugins/MorseConverter/MorseConverter.plugin.js",
     },
     changelog: [
       {
@@ -28,8 +28,8 @@ module.exports = (() => {
         items: [
           "This is the initial release of the Morse plugin.",
           "Converts inputted text into Morse code by using slash-commands.",
-	        "This Plugin uses Code from Ahlawat's Nekos Plugin",
-	        "This Plugin will instantly be removed if Ahlawat says so",
+	  "This Plugin uses Code from Ahlawat's Nekos Plugin",
+	  "This Plugin will instantly be removed if Ahlawat says so",
         ],
       },
     ],
@@ -110,7 +110,17 @@ module.exports = (() => {
       );
     }
 
-    if (sendOption.value === true) {
+    if (sendOption.value == false) {
+      	MessageActions.receiveMessage(
+        channel.id,
+        LibraryUtils.FakeMessage(
+          channel.id,
+          morseCode
+        )
+        undefined,
+        {}
+      );
+    } else {
       MessageActions.sendMessage(
         channel.id,
         {
@@ -118,16 +128,6 @@ module.exports = (() => {
           tts: false,
           validNonShortcutEmojis: [],
         },
-        undefined,
-        {}
-      );
-    } else {
-      MessageActions.receiveMessage(
-        channel.id,
-        LibraryUtils.FakeMessage(
-          channel.id,
-          morseCode
-        )
       );
     }
   } catch (err) {
