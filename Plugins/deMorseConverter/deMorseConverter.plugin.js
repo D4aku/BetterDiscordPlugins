@@ -26,8 +26,8 @@ module.exports = (() => {
       {
         title: "Disclaimer!",
         items: [
-	        "This Plugin uses Code from Ahlawat's Nekos Plugin, thank you a lot!",
-	        "This Plugin will instantly be removed if Ahlawat says so!",
+	  "This Plugin uses Code from Ahlawat's Nekos Plugin, thank you a lot!",
+	  "This Plugin will instantly be removed if Ahlawat says so!",
         ],
         title: "Release v1.0.2",
         items: [
