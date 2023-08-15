@@ -1,5 +1,5 @@
 1. **Install Better Discord**:
-   Before you can use any custom plugins, you need to have Better Discord installed. If you haven't installed it yet, visit the [Better Discord website]([https://betterdiscord.net/](https://betterdiscord.app/)) and follow their instructions on downloading and installing it on your operating system.
+   Before you can use any custom plugins, you need to have Better Discord installed. If you haven't installed it yet, visit the [Better Discord website]([https://betterdiscord.net/](https://betterdiscord.app/)) and follow their instructions on downloading and installing it for your operating system.
 
 2. **Download Plugin**:
    - download the plugin file (`*.plugin.js` file).
