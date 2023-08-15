@@ -1,7 +1,7 @@
 /**
  * @name Morse
  * @description Converts inputted text into Morse code by using slash-commands.
- * @version 1.0.2
+ * @version 1.0.3
  * @author Daaku
  */
 
@@ -16,7 +16,7 @@ module.exports = (() => {
           github_username: "D4aku",
         },
       ],
-      version: "1.0.2",
+      version: "1.0.3",
       description: "Converts inputted text into Morse code by using slash-commands.",
       github: "https://github.com/D4aku/BetterDiscordPlugins/tree/main/Plugins/MorseConverter",
       github_raw:
@@ -24,12 +24,20 @@ module.exports = (() => {
     },
     changelog: [
       {
+        title: "Disclaimer!",
+        items: [
+	  			"This Plugin uses Code from Ahlawat's Nekos Plugin, thank you a lot!",
+	  			"This Plugin will instantly be removed if Ahlawat says so!",
+        ],
+        title: "Release v1.0.3",
+        items: [
+          "Added more symbols from the International Morse Code.",
+        ],
         title: "Initial Release v1.0.0",
         items: [
-          "This is the initial release of the Morse plugin.",
-          "Converts inputted text into Morse code by using slash-commands.",
-	  "This Plugin uses Code from Ahlawat's Nekos Plugin",
-	  "This Plugin will instantly be removed if Ahlawat says so",
+          "This is the initial release of the deMorse plugin.",
+          "Converts inputted Morse code into text by using slash-commands.",
+          "Supports 36 letters of the International Morse Code.",
         ],
       },
     ],
