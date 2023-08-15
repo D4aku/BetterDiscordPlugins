@@ -3,12 +3,12 @@ Welcome to my Better Discord Plugins Repository! This repository contains a coll
 ## Installation
 
 1. **Install Better Discord**:
-   Before you can use any custom plugins, you need to have Better Discord installed. If you haven't installed it yet, visit the [Better Discord website]([https://betterdiscord.net/](https://betterdiscord.app/)) and follow their instructions on downloading and installing it on your operating system.
+      Before you can use any custom plugins, you need to have Better Discord installed. If you haven't installed it yet, visit the [Better Discord website]([https://betterdiscord.net/](https://betterdiscord.app/)) and follow their instructions on downloading and installing it for your operating system.
 
 2. **Download Plugins**:
    - Browse the list of plugins available in this repository's "Plugins" directory.
-   - Choose a plugin you'd like to install and click on its name to view its details.
-   - Look for the "Download" button and click on it to download the plugin's file (usually a `.js` file).
+   - Choose a plugin you'd like to install and enter its directory to view its details.
+   - download the plugin file (`*.plugin.js` file).
 
 3. **Locate the Plugin Folder**:
    - Open Discord and click on the gear icon near your username to access User Settings.
