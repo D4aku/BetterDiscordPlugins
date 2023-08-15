@@ -17,11 +17,7 @@
    - In Discord's User Settings > Plugins, you should now see the plugin you just added listed.
    - Enable the plugin by toggling the switch next to its name.
 
-6. **Configure Plugin Settings (if applicable)**:
-   - Some plugins might have configurable settings that you can adjust to your preference.
-   - Click on the "Settings" or "Configure" button next to the enabled plugin to access its settings panel.
-
-7. **Restart Discord**: (Optional)
+6. **Restart Discord**: (Optional)
    - To apply the changes and start using the plugin, you need to restart Discord.
    - Close and reopen Discord or use the Ctrl+R (Cmd+R on Mac) shortcut to refresh Discord.
 
@@ -29,7 +25,7 @@
 
 - Once installed, the plugins will add new features or improvements to your Discord interface.
 - If you encounter any issues or have questions about a specific plugin, please add me on discord: @daakup
-- For general inquiries or discussions about Better Discord plugins, feel free to join the [Better Discord Discord Server]([https://discord.gg/betterplugins](https://discord.com/invite/0Tmfo5ZbORCRqbAd)) where you can connect with other users and plugin developers.
+- For general inquiries or discussions about Better Discord plugins, feel free to join the [Better Discord Discord Server]([https://discord.com/invite/0Tmfo5ZbORCRqbAd]) where you can connect with other users and plugin developers.
 
 Thank you for choosing my Better Discord Plugins and enhancing your Discord experience with those! Enjoy!
 
