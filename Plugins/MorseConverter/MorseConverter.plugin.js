@@ -19,7 +19,8 @@ module.exports = (() => {
       version: "1.0.1",
       description: "Converts inputted text into Morse code by using slash-commands.",
       github: "https://github.com/D4aku/BetterDiscordPlugins/tree/main/Plugins/MorseConverter",
-      github_raw: "https://raw.githubusercontent.com/D4aku/BetterDiscordPlugins/main/Plugins/MorseConverter/MorseConverter.plugin.js",
+      github_raw:
+        "https://github.com/D4aku/BetterDiscordPlugins/blob/main/Plugins/MorseConverter/MorseConverter.plugin.js",
     },
     changelog: [
       {
@@ -27,8 +28,8 @@ module.exports = (() => {
         items: [
           "This is the initial release of the Morse plugin.",
           "Converts inputted text into Morse code by using slash-commands.",
-          "This Plugin uses Code from Ahlawat's Nekos Plugin",
-          "This Plugin will instantly be removed if Ahlawat says so",
+	  "This Plugin uses Code from Ahlawat's Nekos Plugin",
+	  "This Plugin will instantly be removed if Ahlawat says so",
         ],
       },
     ],
@@ -39,8 +40,10 @@ module.exports = (() => {
     {
       window: "ZeresPluginLibrary",
       filename: "0PluginLibrary.plugin.js",
-      external: "https://rauenzi.github.io/BDPluginLibrary/release/0PluginLibrary.plugin.js",
-      downloadUrl: "https://rauenzi.github.io/BDPluginLibrary/release/0PluginLibrary.plugin.js",
+      external:
+        "https://rauenzi.github.io/BDPluginLibrary/release/0PluginLibrary.plugin.js",
+      downloadUrl:
+        "https://rauenzi.github.io/BDPluginLibrary/release/0PluginLibrary.plugin.js",
     },
   ];
 
@@ -53,7 +56,7 @@ module.exports = (() => {
           DiscordModules: { MessageActions },
         } = ZLibrary;
 
-        const { LibraryUtils, ApplicationCommandAPI, BunnyLib } = ZLibrary.buildPlugin(config);
+        const { LibraryUtils, ApplicationCommandAPI } = BunnyLib.build(config);
 
         const MorseCodeMap = {
           A: ".-", B: "-...", C: "-.-.", D: "-..", E: ".",
