@@ -26,8 +26,8 @@ module.exports = (() => {
       {
         title: "Disclaimer!",
         items: [
-	  			"This Plugin uses Code from Ahlawat's Nekos Plugin, thank you a lot!",
-	  			"This Plugin will instantly be removed if Ahlawat says so!",
+	  "This Plugin uses Code from Ahlawat's Nekos Plugin, thank you a lot!",
+	  "This Plugin will instantly be removed if Ahlawat says so!",
         ],
         title: "Release v1.0.3",
         items: [
@@ -36,7 +36,7 @@ module.exports = (() => {
         title: "Initial Release v1.0.0",
         items: [
           "This is the initial release of the deMorse plugin.",
-          "Converts inputted Morse code into text by using slash-commands.",
+          "Converts inputted text into Morse code by using slash-commands.",
           "Supports 36 letters of the International Morse Code.",
         ],
       },
