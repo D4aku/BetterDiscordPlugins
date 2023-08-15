@@ -23,9 +23,9 @@
 
 ## Usage and Support
 
-- Once installed, the plugins will add new features or improvements to your Discord interface.
+- Once installed, the plugins will add a new Discord Slash Command. Use it by typing /Morse into any chat.
 - If you encounter any issues or have questions about a specific plugin, please add me on discord: @daakup
-- For general inquiries or discussions about Better Discord plugins, feel free to join the [Better Discord Discord Server]([https://discord.com/invite/0Tmfo5ZbORCRqbAd]) where you can connect with other users and plugin developers.
+- For general inquiries or discussions about Better Discord plugins, feel free to join the [Better Discord Discord Server](https://discord.com/invite/0Tmfo5ZbORCRqbAd) where you can connect with other users and plugin developers.
 
 Thank you for choosing my Better Discord Plugins and enhancing your Discord experience with those! Enjoy!
 
