@@ -110,26 +110,27 @@ module.exports = (() => {
       );
     }
 
-    if (sendOption.value == false) {
-    	MessageActions.receiveMessage(
-            channel.id,
-            LibraryUtils.FakeMessage(
-            	channel.id,
-            	morseCode
-            ),
-            undefined,
-            {}
-        );
+    if (sendOption.value === false) {
+  	MessageActions.receiveMessage(
+    	    channel.id,
+    	    LibraryUtils.FakeMessage(
+                channel.id,
+      		morseCode
+    	    )
+  	);
     } else {
-        MessageActions.sendMessage(
-            channel.id,
-            {
-                content: morseCode,
-            	tts: false,
-            	validNonShortcutEmojis: [],
-            }
-        );
+  	MessageActions.sendMessage(
+    	    channel.id,
+    	    {
+      	    	content: morseCode,
+	    	tts: false,
+      	    	validNonShortcutEmojis: [],
+    	    },
+            undefined,
+    	    {}
+  	);
     }
+	  
   } catch (err) {
     Logger.err(err);
     MessageActions.receiveMessage(
