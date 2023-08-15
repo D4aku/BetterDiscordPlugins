@@ -1,7 +1,7 @@
 /**
  * @name deMorse
  * @description Converts inputted Morse code into text by using slash-commands.
- * @version 1.0.1
+ * @version 1.0.2
  * @author Daaku
  */
 
@@ -16,7 +16,7 @@ module.exports = (() => {
           github_username: "D4aku",
         },
       ],
-      version: "1.0.1",
+      version: "1.0.2",
       description: "Converts inputted Morse code into text by using slash-commands.",
       github: "https://github.com/D4aku/BetterDiscordPlugins/tree/main/Plugins/deMorseConverter",
       github_raw:
@@ -24,10 +24,20 @@ module.exports = (() => {
     },
     changelog: [
       {
+        title: "Disclaimer!",
+        items: [
+	        "This Plugin uses Code from Ahlawat's Nekos Plugin, thank you a lot!",
+	        "This Plugin will instantly be removed if Ahlawat says so!",
+        ],
+        title: "Release v1.0.2",
+        items: [
+          "Added more symbols from the International Morse Code.",
+        ],
         title: "Initial Release v1.0.0",
         items: [
           "This is the initial release of the deMorse plugin.",
           "Converts inputted Morse code into text by using slash-commands.",
+          "Supports 36 letters of the International Morse Code.",
         ],
       },
     ],
@@ -57,14 +67,19 @@ module.exports = (() => {
         const { LibraryUtils, ApplicationCommandAPI } = BunnyLib.build(config);
 
         const MorseCodeMap = {
-          ".-": "a", "-...": "b", "-.-.": "c", "-..": "d", ".": "e",
-          "..-.": "f", "--.": "g", "....": "h", "..": "i", ".---": "j",
-          "-.-": "k", ".-..": "l", "--": "m", "-.": "n", "---": "o",
-          ".--.": "p", "--.-": "q", ".-.": "r", "...": "s", "-": "t",
-          "..-": "u", "...-": "v", ".--": "w", "-..-": "x", "-.--": "y",
-          "--..": "z", "/": " ", ".----": "1", "..---": "2",
-          "...--": "3", "....-": "4", ".....": "5", "-....": "6",
-          "--...": "7", "---..": "8", "----.": "9", "-----": "0"
+".-": "a", "-...": "b", "-.-.": "c", "-..": "d", ".": "e",
+"..-.": "f", "--.": "g", "....": "h", "..": "i", ".---": "j",
+"-.-": "k", ".-..": "l", "--": "m", "-.": "n", "---": "o",
+".--.": "p", "--.-": "q", ".-.": "r", "...": "s", "-": "t",
+"..-": "u", "...-": "v", ".--": "w", "-..-": "x", "-.--": "y",
+"--..": "z", "/": " ", ".----": "1", "..---": "2",
+"...--": "3", "....-": "4", ".....": "5", "-....": "6",
+"--...": "7", "---..": "8", "----.": "9", "-----": "0",
+".-.-.-": ".", "--..--": ",", "..--..": "?", ".----.": "'",
+"-.-.--": "!", "-..-.": "/", "-.--.": "(", "-.--.-": ")",
+".-...": "&", "---...": ":", "-.-.-.": ";", "-...-": "=",
+".-.-.": "+", "-....-": "-", "..--.-": "_", ".-..-.": "\"",
+"...-..-": "$", ".--.-.": "@"
         };
 
         return class deMorse extends Plugin {
