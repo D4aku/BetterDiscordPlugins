@@ -1,7 +1,7 @@
 /**
  * @name deMorse
  * @description Converts inputted Morse code into text by using slash-commands.
- * @version 1.0.0
+ * @version 1.0.1
  * @author Daaku
  */
 
@@ -16,7 +16,7 @@ module.exports = (() => {
           github_username: "D4aku",
         },
       ],
-      version: "1.0.0",
+      version: "1.0.1",
       description: "Converts inputted Morse code into text by using slash-commands.",
       github: "https://github.com/D4aku/BetterDiscordPlugins/tree/main/Plugins/deMorseConverter",
       github_raw:
