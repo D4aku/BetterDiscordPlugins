@@ -2,7 +2,7 @@
    Before you can use any custom plugins, you need to have Better Discord installed. If you haven't installed it yet, visit the [Better Discord website]([https://betterdiscord.net/](https://betterdiscord.app/)) and follow their instructions on downloading and installing it for your operating system.
 
 2. **Download Plugin**:
-   - download the plugin file (`MorseConverter.plugin.js` file).
+   - download the plugin file (`deMorseConverter.plugin.js` file).
 
 3. **Locate the Plugin Folder**:
    - Open Discord and click on the gear icon near your username to access User Settings.
@@ -10,7 +10,7 @@
    - There you will find a "Plugin Folder" button. Click on it to open the plugins folder.
 
 4. **Install Plugins**:
-   - In the plugins folder, paste the downloaded plugin file (`MorseConverter.plugin.js` file)
+   - In the plugins folder, paste the downloaded plugin file (`deMorseConverter.plugin.js` file)
 
 5. **Enable Plugins**:
    - After pasting the plugin file, close the plugins folder window.
