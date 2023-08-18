@@ -3,21 +3,24 @@
 
 2. **Download Plugin**:
    - download the plugin file (`deMorseConverter.plugin.js` file).
+  
+3. **Download Dependencies**:
+   - Head over to [0PluginLibrary](https://github.com/rauenzi/BDPluginLibrary/blob/master/release/0PluginLibrary.plugin.js) and [BunnyLib](https://github.com/Tharki-God/BetterDiscordPlugins/blob/master/1BunnyLib.plugin.js) and download the Plugins at their official GitHub repositories. (I'm planning to let my plugin download them itself but at the moment I'm too busy with other things)
 
-3. **Locate the Plugin Folder**:
+4. **Locate the Plugin Folder**:
    - Open Discord and click on the gear icon near your username to access User Settings.
    - Scroll down on the left sidebar and click on "Plugins."
    - There you will find a "Plugin Folder" button. Click on it to open the plugins folder.
 
-4. **Install Plugins**:
-   - In the plugins folder, paste the downloaded plugin file (`deMorseConverter.plugin.js` file)
+5. **Install Plugins**:
+   - In the plugins folder, paste the downloaded plugin files (`*.plugin.js` files)
 
-5. **Enable Plugins**:
-   - After pasting the plugin file, close the plugins folder window.
+6. **Enable Plugins**:
+   - After pasting the plugin files, close the plugins folder window.
    - In Discord's User Settings > Plugins, you should now see the plugin you just added listed.
    - Enable the plugin by toggling the switch next to its name.
 
-6. **Restart Discord**: (Optional)
+7. **Restart Discord**: (Optional)
    - To apply the changes and start using the plugin, you need to restart Discord.
    - Close and reopen Discord or use the Ctrl+R (Cmd+R on Mac) shortcut to refresh Discord.
 
